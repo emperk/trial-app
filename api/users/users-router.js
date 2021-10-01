@@ -13,6 +13,10 @@ router.get('/users', async (req, res, next) => {
   }
 });
 
+router.post('/register', async (req, res, next) => {
+  
+})
+
 
 
 module.exports = router;
