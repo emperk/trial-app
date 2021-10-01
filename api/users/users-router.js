@@ -23,18 +23,6 @@ router.post('/register', validateUser, (req, res, next) => {
     .catch(next)
 })
 
-// router.post('/login', (req, res, next) => {
-//   User.insert({
-//     username: req.username,
-//     password: req.password
-//   })
-//     .then(validUser => {
-//       res.status(201).json({
-//         message: 'Welcome!'
-//       })
-//     })
-// })
-
 router.post('/login', (req, res, next) => {
   const user = req.body
   if (!user.username || !user.password) {
