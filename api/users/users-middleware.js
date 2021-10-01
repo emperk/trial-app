@@ -1,4 +1,4 @@
-const User = require('./users-model');
+// const User = require('./users-model');
 
 function validateUser(req, res, next) {
   const { username, password } = req.body
