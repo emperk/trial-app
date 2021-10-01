@@ -14,13 +14,6 @@ server.use('*', (req, res) => {
   res.send(`<h1>Work in Progress!</h1>`)
 })
 
-// server.use((err, req, res, next) => {
-//   res.status(500).json({
-//     message: err.message,
-//     stack: err.stack,
-//   })
-// })
-
 server.listen(PORT, () => {
   console.log(`*** listening on port: ${PORT} ***`)
 })
