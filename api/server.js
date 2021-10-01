@@ -8,7 +8,7 @@ server.use(express.json());
 server.use('/api', usersRouter)
 
 server.use('*', (req, res) => {
-  res.send(`<h1>Work in Progress!</h1>`)
+  res.send(`<h1>Work in Progress</h1>`)
 })
 
 module.exports = server;
